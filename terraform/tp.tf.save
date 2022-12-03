@@ -1,0 +1,37 @@
+# Create a region variable containing the list of OVHcloud regions
+# It will be used to iterate over different regions in order to
+# start an instance on each of them.
+ variable "region" {
+   type = list
+   default = ["GRA11", "SBG5"]
+ }
+
+# Creating an SSH key pair
+ resource "openstack_compute_keypair_v2" "test_keypair_all" {
+   count = length(var.region)
+   provider = openstack.ovh # Specify provider name
+   name = "test_keypair_all" # Name of the SSH key
+   public_key = file("~/.ssh/id_rsa.pub") # Your SSH key path
+   region = element(var.region, count.index)
+ }
+
+ # Create a resource that is an OpenStack instance in each region
+ resource "openstack_compute_instance_v2" "instances_on_all_regions" {
+   # Number of times the resource will be created
+   # defined by the length of the list named region
+   count = length(var.region)
+   provider = openstack.ovh # Provider name
+   name = "backend_eductive21.region_count.index" # Instance name
+   flavor_name = "s1-2" # Instance flavor
+   image_name = "Debian 10" # Image name
+   # element is a function that accesses the element at the position
+   # count.index of the list var.region. It allows to iterate between regions
+   region = element(var.region, count.index)
+   # Accesses the name of the openstack_compute_keypair_v2 resource variable named test_keypair
+   key_pair = element(openstack_compute_keypair_v2.test_keypair_all.*.name, count.index)
+   network {
+     name = "Ext-Net" # Adds the public network to your instance
+   }
+ }
+
+openstack_compute_keypair_v2.test_keypair_all[1]

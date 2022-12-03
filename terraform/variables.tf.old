@@ -4,7 +4,7 @@ type = string
 }
 variable "instance_name" {
 type = string
-default = "Eductive21"
+default = "backend_eductive21_gra_1"
 }
 variable "image_name" {
 type = string
@@ -13,4 +13,7 @@ default = "Debian 11"
 variable "flavor_name" {
 type = string
 default = "s1-2"
+}
+variable "instance_count" {
+  default = "2"
 }
