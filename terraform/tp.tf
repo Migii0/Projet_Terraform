@@ -1,26 +1,49 @@
-resource "openstack_compute_keypair_v2" "test_keypair" {
-  count      = 1
+resource "openstack_compute_keypair_v2" "gra11_keypair" {
+  count      = 3
   provider   = openstack.ovh
-  name       = "sshkey_eductive21"  # Attention au XX ;)
+  name       = "sshkey_eductive21_gra_${count.index+1}"  # Attention au XX ;)
   public_key = file("~/.ssh/id_rsa.pub")
   region     = "GRA11"
 }
-# Création d'une instance
-resource "openstack_compute_instance_v2" "tp_terraform" {
-  count       = 1
-  name        = "${var.instance_name}_${count.index+1}"    # Nom de l'instance
+
+
+# Create two instances in the GRA11 region
+resource "openstack_compute_instance_v2" "gra11_instances" {
+  count = 3
+  name  = "backend_eductive21_gra_${count.index+1}"
   provider    = openstack.ovh        # Nom du fournisseur
   image_name  = var.image_name       # Nom de l'image
   flavor_name = var.flavor_name      # Nom du type d'instance
-  region      = "GRA11"           # Nom de la régions
+  region = "GRA11"
+  key_pair    = openstack_compute_keypair_v2.gra11_keypair[count.index].name
+
+  network {
+    name      = "Ext-Net"
+  }
+}
+
+resource "openstack_compute_keypair_v2" "sbg5_keypair" {
+  count      = 3
+  provider   = openstack.ovh
+  name       = "sshkey_eductive21_sbg_${count.index+1}"  # Attention au XX ;)
+  public_key = file("~/.ssh/id_rsa.pub")
+  region     = "SBG5"
+}
 
 
-  # Nom de la ressource openstack_compute_keypair_v2 nommée test_keypair
-  key_pair    = openstack_compute_keypair_v2.test_keypair[count.index].name
+# Create two instances in the SBG5 region
+resource "openstack_compute_instance_v2" "sbg5_instances" {
+  count = 3
+  name  = "backend_eductive21_sbg_${count.index+1}"
+  provider    = openstack.ovh        # Nom du fournisseur
+  image_name  = var.image_name       # Nom de l'image
+  flavor_name = var.flavor_name      # Nom du type d'instance
+  region = "SBG5"
+  key_pair    = openstack_compute_keypair_v2.sbg5_keypair[count.index].name
 
-  # Composant réseau par défaut
   network {
     name      = "Ext-Net"
   }
 
- }
+
+}

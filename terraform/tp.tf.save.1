@@ -1,0 +1,38 @@
+resource "openstack_compute_keypair_v2" "test_keypair" {
+  count      = 3
+  provider   = openstack.ovh
+  name       = "sshkey_eductive21_${count.index+1}"  # Attention au XX ;)
+  public_key = file("~/.ssh/id_rsa.pub")
+  region     = "GRA11"
+}
+
+
+# Create two instances in the GRA11 region
+resource "openstack_compute_instance_v2" "gra11_instances" {
+  count = 2
+  name  = "gra11-instance-${count.index+1}"
+  # Other instance configuration goes here
+  region = "GRA11"
+
+  key_pair    = openstack_compute_keypair_v2.test_keypair[count.index].name
+
+  network {
+    name      = "Ext-Net"
+  }
+}
+# Create two instances in the SBG5 region
+resource "openstack_compute_instance_v2" "sbg5_instances" {
+  count = 2
+  name  = "sbg5-instance-${count.index+1}"
+  # Other instance configuration goes here
+  region = "SBG5"
+
+ key_pair    = openstack_compute_keypair_v2.test_keypair[count.index].name
+
+  # Composant réseau par défaut
+  network {
+    name      = "Ext-Net"
+  }
+
+
+}

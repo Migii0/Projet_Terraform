@@ -1,0 +1,1000 @@
+  100  terraform plan
+  101  nano tp.tf
+  102  tflint
+  103  terraform plan
+  104  nano tp.tf
+  105  terraform plan
+  106  nano tp.tf
+  107  source ~/openrc.sh
+  108  echo $OS_TENANT_ID [B
+  109  terraform plan
+  110  terraform apply
+  111  terraform show
+  112  sudo fdisk -l
+  113  fdisk -l
+  114  sudo fdisk -l
+  115  terraform show
+  116  ssh debian@141.94.172.33
+  117  ls
+  118  nano providers.tf 
+  119  nano tp.tf
+  120  tflint
+  121  nano variables.tf 
+  122  tflint
+  123  nano tp.tf
+  124  tflint
+  125  nano tp.tf
+  126  terraform plan
+  127  nano tp.tf
+  128  terraform plan
+  129  nano tp.tf
+  130  terraform plan
+  131  nano tp.tf
+  132  terraform plan
+  133  nano variables.tf 
+  134  terraform plan
+  135  tflint
+  136  terraform init -upgrade
+  137  terraform plan
+  138  terraform apply
+  139  nano tp.tf
+  140  terraform plan
+  141  terraform apply
+  142  terraform show
+  143  ssh debian@57.128.70.177
+  144  nano tp.tf
+  145  nano variables.tf 
+  146  nano tp.tf
+  147  cp tp.tf old/tp.tf.old
+  148  mkdir old
+  149  cp tp.tf old/tp.tf.old
+  150  nano tp.tf
+  151  terraform plan
+  152  terraform apply
+  153  terraform show
+  154  ssh debian@192.168.21.182"
+  155  ssh debian@192.168.21.182
+  156  cp  old/tp.tf.old tp.tf
+  157  nano tp.tf
+  158  ls
+  159  nano ls
+  160  ls
+  161  nano providers.tf 
+  162  ls
+  163  nano variables.tf 
+  164  ls
+  165  nano tp.tf
+  166  nano variables.tf 
+  167  nano tp.tf
+  168  nano variables.tf 
+  169  nano tp.tf
+  170  exit
+  171  terraform show
+  172  ls
+  173  cd terraform/
+  174  terraform show
+  175  ls
+  176  nano tp.tf
+  177  terraform apply
+  178  source ~/openrc.sh
+  179  terraform apply
+  180  terraform show
+  181  cd /
+  182  ls
+  183  cd home/eductive21
+  184  ls
+  185  cd ansible/
+  186  pwd
+  187  nano inventory.yml
+  188  cd ..
+  189  cd terraform/
+  190  ls
+  191  terraform tp.tf
+  192  terraform show
+  193  cd ..
+  194  cd ansible/
+  195  ls
+  196  nano inventory.yml 
+  197  yamllint inventory.yml 
+  198  nano inventory.yml 
+  199  yamllint inventory.yml 
+  200  cd /
+  201  cd home/
+  202  ls
+  203  cd eductive06
+  204  ls
+  205  cd terraform/
+  206  ls
+  207  cd ..
+  208  cd eductive21
+  209  ls
+  210  cd ansible/
+  211  nano 01-helloworld.yml
+  212  yamllint 01-helloworld.yml 
+  213  ansible-playbook 01-helloworld.yml -i inventory.yml 
+  214  ssh debian@57.128.38.221
+  215  ls
+  216  cd ..
+  217  ls
+  218  cd terraform/
+  219  ls
+  220  nano tp.tf
+  221  nano inventory.tmpl
+  222  nano local_file
+  223  terraform init -upgrade
+  224  terraform plan
+  225  terraform apply
+  226  nano variables.tf 
+  227  tflint
+  228  ansible-playbook 01-helloworld.yml -i inventory.yml 
+  229  cd ..
+  230  cd ansible/
+  231  ansible-playbook 01-helloworld.yml -i inventory.yml 
+  232  cd ..
+  233  cd terraform/
+  234  ls
+  235  rm local_file 
+  236  nano providers.tf 
+  237  terraform init -upgrade
+  238  nano providers.tf 
+  239  terraform init -upgrade
+  240  terraform plan
+  241  terraform apply
+  242  cd ..
+  243  cd ansible/1
+  244  ansible-playbook 01-helloworld.yml -i inventory.yml 
+  245  cd ..
+  246  cd terraform/
+  247  nano inventory.tmpl 
+  248  ls
+  249  cd ..
+  250  cd ansible/
+  251  nano inventory.yml 
+  252  ansible-playbook 01-helloworld.yml -i inventory.yml 
+  253  ls
+  254  nano 02-web.yml 
+  255  ansible-playbook 02-web.yml -i inventory.yml 
+  256  ls
+  257  nano 02-web.yml 
+  258  nano 01-helloworld.yml 
+  259  nano 02-web.yml 
+  260  ansible-playbook 02-web.yml -i inventory.yml 
+  261  ssh debian@57.128.38.221
+  262  ls
+  263  mkdir templates
+  264  nano index.html
+  265  ls
+  266  cd 02
+  267  nano 02-web.yml 
+  268  yamllint 02-web.yml 
+  269  ansible-playbook 02-web.yml -i inventory.yml 
+  270  ls
+  271  cd templates/
+  272  ls
+  273  nano index.html
+  274  cd ..
+  275  ansible-playbook 02-web.yml -i inventory.yml 
+  276  ls
+  277  nano 03-facts.yml
+  278  ansible-playbook 03-facts.yml.yml -i inventory.yml 
+  279  ansible-playbook 03-facts.yml -i inventory.yml 
+  280  cd ..
+  281  cd terraform/
+  282  terraform plan
+  283  terraform apply
+  284  cd ..
+  285  ls
+  286  cd ansible/
+  287  ls
+  288  ansible-playbook 03-facts.yml -i inventory.yml 
+  289  nano 03-facts.yml 
+  290  ansible-playbook 03-facts.yml -i inventory.yml 
+  291  nano 03-facts.yml 
+  292  yamllint 03-facts.yml 
+  293  ansible-playbook 03-facts.yml -i inventory.yml 
+  294  nano 03-facts.yml 
+  295  nano 03-facts.yml
+  296  ansible-playbook 03-facts.yml -i inventory.yml 
+  297  ls
+  298  nano inventory.yml 
+  299  rm index.html 
+  300  cd ..
+  301  ls
+  302  cd terraform/
+  303  ls
+  304  cd terraform/
+  305  terraform init -upgrade
+  306  cd ..
+  307  ls
+  308  cd ansible/
+  309  ansible-playbook 03-facts.yml -i inventory.yml 
+  310  ansible-playbook 02-web.yml -i inventory.yml 
+  311  cd ..
+  312  ls
+  313  cd terraform/
+  314  ls
+  315  nano inventory.tmpl 
+  316  cd ..
+  317  ls
+  318  cd ansible/
+  319  ls
+  320  ansible-playbook 03-facts.yml -i inventory.yml 
+  321  cd ..
+  322  ls
+  323  cd terraform/
+  324  ls
+  325  nano inventory.tmpl 
+  326  ls
+  327  nano tp.tf
+  328  nano providers.tf 
+  329  nano inventory.tmpl 
+  330  yamllint inventory.tmpl 
+  331  cd ..
+  332  cd ansible/
+  333  ansible-playbook 03-facts.yml -i inventory.yml 
+  334  nano inventory.yml 
+  335  ansible-playbook 03-facts.yml -i inventory.yml 
+  336  cd templates/
+  337  ls
+  338  rename
+  339  cp index.html index.j2
+  340  ls
+  341  rm index.html 
+  342  nano index.j2 
+  343  ansible-playbook 03-facts.yml -i inventory.yml 
+  344  cd ..
+  345  ansible-playbook 03-facts.yml -i inventory.yml 
+  346  ansible-playbook 02-web.yml -i inventory.yml 
+  347  nano 02-web.yml 
+  348  ansible-playbook 02-web.yml -i inventory.yml 
+  349  nano 02-web.yml 
+  350  yamllint 02-web.yml 
+  351  ansible-playbook 02-web.yml -i inventory.yml 
+  352  cd templates/
+  353  nano index.j2 
+  354  cd .
+  355  cd ..
+  356  ansible-playbook 02-web.yml -i inventory.yml 
+  357  ls
+  358  cd terraform/
+  359  terraform destroy
+  360  source ~/openrc.sh
+  361  terraform destroy
+  362  ls
+  363  nano inventory.tmpl 
+  364  nano tp.tf
+  365  terraform workspace list
+  366  terraform workspace new additional_terraform
+  367  terraform workspace select additional_terraform
+  368  terraform workspace show
+  369  ls
+  370  cd ..
+  371  ls
+  372  mkdir haproxy-kitten
+  373  nano providers.tf
+  374  terraform init
+  375  nano variables.tf
+  376  ls
+  377  nano tp.tf
+  378  tflint tp.tf 
+  379  ls
+  380  tflint variables.tf 
+  381  terraform plan
+  382  ls
+  383  nano variables.tf 
+  384  nano tp.tf 
+  385  nano variables.tf 
+  386  tflint variables.tf 
+  387  terraform plan
+  388  terraform apply
+  389  ls
+  390  nano providers.tf 
+  391  ls
+  392  nano tp.tf 
+  393  nano providers.tf 
+  394  nano tp.tf 
+  395  terraform plan
+  396  terraform apply
+  397  nano tp.tf 
+  398  terraform apply
+  399  terraform show
+  400  nano tp.tf 
+  401  ls
+  402  cd ..
+  403  ls
+  404  cd eductive21
+  405  ls
+  406  cd ansible/
+  407  ls
+  408  nano inventory.yml 
+  409  cd ..
+  410  ls
+  411  cd haproxy-kitten/
+  412  ls
+  413  cd ..
+  414  ls
+  415  cd terraform/
+  416  ls
+  417  cd ..
+  418  ls
+  419  *
+  420  ls
+  421  mv
+  422  cp providers.tf haproxy-kitten/providers.tf
+  423  cp tp.tf haproxy-kitten/tp.tf
+  424  cp variables.tf haproxy-kitten/variables.tf
+  425  ls
+  426  cd haproxy-kitten/
+  427  lms
+  428  ls
+  429  terraform show
+  430  terraform apply
+  431  terraform init
+  432  terraform apply
+  433  ls
+  434  nano tp.tf 
+  435  ls
+  436  terraform apply
+  437  nano tp.tf 
+  438  terraform apply
+  439  ls
+  440  terraform show
+  441  ls
+  442  cd ..
+  443  ls
+  444  cd ansible/
+  445  ls
+  446  cd ..
+  447  cd haproxy-kitten/
+  448  nano tp.tf 
+  449  nano inventory.tmpl
+  450  nano providers.tf 
+  451  yamllint providers.tf 
+  452  nano providers.tf 
+  453  terraform init -upgrade
+  454  ls
+  455  cd do
+  456  mkdir docker
+  457  cd docker
+  458  pwd
+  459  mkdir -p ~/virtualenvs
+  460  virtualenv -p python3 ~/virtualenvs/flask
+  461  source ~/virtualenvs/flask/bin/activate
+  462  python --version
+  463  echo $PATH
+  464  pipenv
+  465  mkdir requirements.txt
+  466  nano requirements.txt/
+  467  mdir requirements.txt
+  468  rm requirements.txt/
+  469  rm -o requirements.txt/
+  470  rm -f requirements.txt/
+  471  rm --help
+  472  rm -r requirements.txt/
+  473  ls
+  474  nano requirements.txt
+  475  pip install -r requirements.txt 
+  476  nano app.py
+  477  python app.py 
+  478  nano flashenv.sh
+  479  nano flaskenv.sh
+  480  cat ~/flaskenv.sh
+  481  ls
+  482  cp flaskenv.sh /home
+  483  restart
+  484  exit
+  485  curl http://172.17.0.6
+  486  curl http://172.17.0.6:8021
+  487  curl http://172.17.0.3:8000/
+  488  curl http://172.17.0.3:8021
+  489  curl http://172.17.0.3:8000
+  490  docker image ls
+  491  ls
+  492  cd docker
+  493  ls
+  494  cp flaskenv.sh /home
+  495  cp flaskenv.sh /home/eductive21
+  496  cat ~/flaskenv.sh
+  497  ls
+  498  rm flaskenv.sh 
+  499  ls
+  500  cat ~/flaskenv.sh
+  501  source ~/flaskenv.sh
+  502  echo $FLASK_PORT
+  503  python app.py 
+  504  python3 app.py 
+  505  nano app.py 
+  506  python3 app.py 
+  507  source ~/virtualenvs/flask/bin/activate
+  508  python app.py 
+  509  FROM debian:bullseye
+  510  nano Dockerfile
+  511  docker build -t tp-docker-eductive21:latest .
+  512  docker run tp-docker-eductive21
+  513  -e FLASK_PORT=$FLASK_PORT
+  514  docker run -e FLASK_PORT=$FLASK_PORT tp-docker-eductive21
+  515  nano Dockerfile
+  516  ls
+  517  nano Dockerfile
+  518  docker run -e FLASK_PORT=$FLASK_PORT tp-docker-eductive21
+  519  nano Dockerfile
+  520  source ~/flaskenv.sh
+  521  docker run -e FLASK_PORT=$FLASK_PORT tp-docker-eductive21
+  522  nano Dockerfile
+  523  docker build -t tp-docker-eductive21:latest .
+  524  docker run -e FLASK_PORT=$FLASK_PORT tp-docker-eductive21
+  525  docker run -e FLASK_PORT=$FLASK_PORT -p $FLASK_PORT:$FLASK_PORT tp-docker-eductiveXX
+  526  docker run -e FLASK_PORT=$FLASK_PORT -p $FLASK_PORT:$FLASK_PORT tp-docker-eductive21
+  527  ls
+  528  nano App
+  529  nano app.py 
+  530  docker run -e FLASK_PORT=$FLASK_PORT -p $FLASK_PORT:$FLASK_PORT tp-docker-eductive21
+  531  nano app.py 
+  532  docker build -t tp-docker-eductive21:latest .
+  533  docker run -p $FLASK_PORT:8000 tp-docker-eductive21
+  534  nano app.py 
+  535  docker build -t tp-docker-eductive21:latest .
+  536  docker run -p $FLASK_PORT:8000 tp-docker-eductive21
+  537  nano app.py 
+  538  docker build -t tp-docker-eductive21:latest .
+  539  docker run -p $FLASK_PORT:8000 tp-docker-eductive21
+  540  nano app.py 
+  541  docker build -t tp-docker-eductive21:latest .
+  542  docker run -p $FLASK_PORT:8000 tp-docker-eductive21
+  543  nano Dockerfile 
+  544  docker build -t tp-docker-eductive21:latest .
+  545  Docker image ls
+  546  focker image ls
+  547  docker image ls
+  548  nano Dockerfile 
+  549  cp Dockerfile DockerfileOld
+  550  nano Dockerfile 
+  551  vim Dockerfile
+  552  cat Dockerfile
+  553  docker build -t tp-docker-eductive21:latest .
+  554  docker image ls
+  555  vim Dockerfile
+  556  rm Dockerfile
+  557  cp DockerfileOld Dockerfil
+  558  rm Dockerfile
+  559  ls
+  560  rm Dockerfil
+  561  cp DockerfileOld Dockerfile
+  562  docker build -t tp-docker-eductive21:latest .
+  563  docker image ls
+  564  nano Dockerfile
+  565  cd Docker
+  566  ls
+  567  cd docker/
+  568  ls
+  569  nano Dockerfile
+  570  vim Dockerfile
+  571  docker build -t tp-docker-eductive21:latest .
+  572  docker image ls
+  573  nano Dockerfile
+  574  vim Dockerfile
+  575  docker build -t tp-docker-eductive21:latest .
+  576  docker image ls
+  577  vim Dockerfile
+  578  ls
+  579  vim Dockerfile
+  580  cp Dockerfile DockerfileOld2
+  581  vim Dockerfile
+  582  docker build -t tp-docker-eductive21:latest .
+  583  docker image ls
+  584  vim Dockerfile
+  585  docker build -t tp-docker-eductive21:latest .
+  586  docker image ls
+  587  cd ~
+  588  ls
+  589  mkdir tp-wordpress-eductive21
+  590  cd tp-wordpress-eductive21/
+  591  mkdir config
+  592  cd config/
+  593  vim php.conf.ini
+  594  vim .env
+  595  vim docker-compose.yml
+  596  docker compose up
+  597  ls
+  598  vim docker-compose.yml 
+  599  vim .env
+  600  rm .env
+  601  nano php.conf.ini 
+  602  rm php.conf.ini 
+  603  mkdir config
+  604  cd config/
+  605  cd ..
+  606  ls
+  607  rm config
+  608  rm -f config
+  609  rm -r config
+  610  vim php.conf.ini
+  611  cat php.conf.ini 
+  612  cd ~/tp-wordpress-eductive21/
+  613  vim .env
+  614  vim docker-compose.yml
+  615  ls
+  616  nano docker-compose.yml 
+  617  ls
+  618  docker compose up
+  619  cd ~
+  620  mkdir tp-swarm-eductive21
+  621  cd tp-swarm-eductive21/
+  622  vim app.py
+  623  vim requirements.txt
+  624  vim Dockerfile
+  625  pwd
+  626  ls
+  627  nano docker-compose.yml
+  628  nano app.py 
+  629  ls
+  630  nano docker-compose.yml 
+  631  docker compose up --build
+  632  docker compose down --volume
+  633  docker compose down --volumes
+  634  docker compose push
+  635  docker stack deploy --compose-file docker-compose.yml swarm-eductive21
+  636  docker stack services swarm-eductive21
+  637  nano app.py 
+  638  docker build -t 127.0.0.1:5000/swarm-eductive27:latest .
+  639  docker build -t 127.0.0.1:5000/swarm-eductive21:latest .
+  640  docker image push 127.0.0.1:5000/swarm-eductive21:latest
+  641  docker service update --image 127.0.0.1:5000/swarm-eductive21:latest swarm-eductive21_we
+  642  docker service update --image 127.0.0.1:5000/swarm-eductive21:latest swarm-eductive21_web
+  643  docker stack rm swarm-eductive21
+  644  ls
+  645  vim docker-compose.yml 
+  646  docker stack deploy --compose-file docker-compose.yml swarm-eductive21
+  647  vim docker-compose.yml 
+  648  docker stack deploy --compose-file docker-compose.yml swarm-eductive21
+  649  vim docker-compose.yml 
+  650  docker stack deploy --compose-file docker-compose.yml swarm-eductive21
+  651  nano app.py 
+  652  docker build -t 127.0.0.1:5000/swarm-eductive22:latest .
+  653  docker build -t 127.0.0.1:5000/swarm-eductive21:latest .
+  654  docker image push 127.0.0.1:5000/swarm-eductive21:latest
+  655  docker service update --image 127.0.0.1:5000/swarm-eductive27:latest swarm-eductive21_web
+  656  docker service update --image 127.0.0.1:5000/swarm-eductive21:latest swarm-eductive21_web
+  657  gtriog
+  658  exit
+  659  ping 1.1.1.1
+  660  exit
+  661  screen -ls
+  662  exexitvferiko
+  663  exit
+  664  ls
+  665  rm ansible
+  666  rm -r ansible
+  667  rm -r terraform
+  668  rm terraform.tfstate
+  669  rm terraform.tfstate.backup 
+  670  ls
+  671  cd Projet
+  672  mkdir Projet
+  673  cd pr
+  674  cd Projet/
+  675  tflint
+  676  mkdir terraform
+  677  mkdir ansible
+  678  screen -RD projet
+  679  screen -ls
+  680  screen -RD projet
+  681  ls
+  682  cd Projet/
+  683  ls
+  684  git 
+  685  git branch
+  686  cd ../
+  687  ls
+  688  git clone https://github.com/Migii0/Projet_Terraform.git
+  689  mv Projet/* Projet_Terraform/
+  690  cd Projet_Terraform/
+  691  ls
+  692  rm git.gitignore 
+  693  git branch
+  694  git add . 
+  695  git commit -m "First commit"
+  696  git config --global user.email "adam.rahmi@outlook.fr"
+  697  git config --global user.name "Migii0"
+  698  git commit -m "First commit"
+  699  git push 
+  700  touch test
+  701  git add .
+  702  git commit -m "Second push"
+  703  git push 
+  704  *
+  705  ls
+  706  cd Projet
+  707  git add .
+  708  git commit -m "test"
+  709  touch test
+  710  git commit -m "test"
+  711  git add .
+  712  git commit -m "test"
+  713  git push 
+  714  git push --set-upstream origin main
+  715  ls
+  716  touch test1
+  717  ls
+  718  cd ..
+  719  ls
+  720  cd Projet-Ter
+  721  cd Projet-Terraform
+  722  cd Projet_Terraform/
+  723  lq
+  724  ls
+  725  git commit -m "test"
+  726  touch test1
+  727  git commit -m "test"
+  728  git add .
+  729  git commit -m "test"
+  730  git push 
+  731  history
+  732  git push 
+  733  git config --global user.email "adam.rahmi@outlook.fr"
+  734  git config --global user.name "Migii0"
+  735  git push 
+  736  git push https://github.com/Migii0/Projet_Terraform.git
+  737  git push
+  738  history
+  739  git push
+  740  ls
+  741  cd Projet-
+  742  cd Projet_Terraform/
+  743  ls
+  744  rm readme.md 
+  745  cat README.md 
+  746  rm test
+  747  rm test1
+  748  cd terraform/
+  749  ls
+  750  terraform workspace show
+  751  terraform workspace select projet
+  752  terraform init
+  753  source ~/openrc.sh
+  754  tflint
+  755  terraform plan
+  756  terraform apply
+  757  terraform show
+  758  ls
+  759  nano tp.tf 
+  760  nano variables.tf 
+  761  nano tp.tf 
+  762  nano variables.tf 
+  763  terraform apply
+  764  terraform show
+  765  flint
+  766  tflint
+  767  nano tp.tf 
+  768  nano variables.tf 
+  769  nano tp.tf 
+  770  nano variables.tf 
+  771  tflint
+  772  terraform apply
+  773  terraform show
+  774  nano variables.tf 
+  775  nano tp.tf 
+  776  tflint
+  777  terraform change
+  778  terraform plan
+  779  nano tp.tf 
+  780  tflint
+  781  terraform plan
+  782  nano tp.tf 
+  783  nano variables.tf 
+  784  terraform plan
+  785  ls
+  786  nano tp.tf 
+  787  tflint
+  788  nano vir
+  789  nano variables.tf 
+  790  tflint
+  791  nano variables.tf 
+  792  get cloud/project/{serviceName}/region
+  793  GET
+  794  curl cloud/project/{serviceName}/region
+  795  ls
+  796  nano tp.tf 
+  797  nano variables.tf 
+  798  cp variables.tf variables.tf.old
+  799  ls
+  800  cp tp.tf tp.tf.old
+  801  nano variables.tf 
+  802  tflint
+  803  nano variables.tf 
+  804  nano variables.tf.old 
+  805  nano tp.tf
+  806  ls
+  807  rm variables.tf
+  808  cp variables.tf.old variables.tf
+  809  nano tp.tf
+  810  nano variables.tf
+  811  tflint
+  812  nano variables.tf
+  813  nano tp.tf
+  814  nano variables.tf.old
+  815  ls
+  816  nano tp.tf
+  817  tflint
+  818  rm variables.tf
+  819  tflint
+  820  terraform plan
+  821  nano tp.tf
+  822  terraform plan
+  823  nano tp.tf
+  824  tflint
+  825  terraform plan
+  826  nano tp.tf
+  827  screen -i
+  828  l
+  829  ls
+  830  cd Projet_Terraform/
+  831  ls
+  832  cd terraform/
+  833  ls
+  834  screen 
+  835  ls
+  836  cd Projet_Terraform/
+  837  cd terraform/
+  838  ls
+  839  nano tp.tf
+  840  tflint
+  841  nano variable
+  842  nano variable.tf
+  843  tflint
+  844  nano tp.tf
+  845  tflint
+  846  terraform plan
+  847  nano tp.tf
+  848  ls
+  849  cd Projet_Terraform/
+  850  ls
+  851  cd terraform/
+  852  ls
+  853  nano tp.tf
+  854  screen
+  855  source ~/openrc.sh
+  856  ls
+  857  cd Projet_Terraform/
+  858  cd terraform/
+  859  terraform plan
+  860  ls
+  861  nano variable
+  862  nano variable.tf
+  863  nano tp.tf
+  864  terraform plan
+  865  terraform apply
+  866  terraform show
+  867  nano tp.tf
+  868  nano variable
+  869  nano variable.tf
+  870  nano tp.tf
+  871  terraform plan
+  872  nano tp.tf
+  873  terraform plan
+  874  nano tp.tf
+  875  terraform plan
+  876  nano tp.tf
+  877  nano variable
+  878  nano variable.tf
+  879  terraform plan
+  880  nano tp.tf
+  881  terraform plan
+  882  nano variable.tf
+  883  terraform apply
+  884  nano tp.tf
+  885  ls
+  886  lq ~
+  887  ls ~
+  888  ls
+  889  nano tp.tf
+  890  nano variable.tf
+  891  nano tp.tf
+  892  nano variable.tf
+  893  nano tp.tf
+  894  nano variable.tf
+  895  terraform apply
+  896  nano variable.tf
+  897  terraform apply
+  898  nano variable.tf
+  899  tflink
+  900  tflint
+  901  nano tp.tf
+  902  terraform apply
+  903  nano tp.tf
+  904  nano variable.tf
+  905  terraform apply
+  906  nano variable.tf
+  907  nano tp.tf
+  908  terraform apply
+  909  nano tp.tf
+  910  terraform apply
+  911  nova
+  912  nova keypar-list
+  913  nova keypair-list
+  914  
+  915  openstack keypair list
+  916  nano providers.tf 
+  917  source ~/openrc.sh
+  918  nova keypair-list
+  919  terraform apply
+  920  nano tp.tf
+  921  terraform apply
+  922  nano tp.tf
+  923  nano variable
+  924  nano variable.tf
+  925  source ~/openrc.sh
+  926  cd Projet_Terraform/
+  927  cd terraform/
+  928  ls
+  929  nano tp.tf
+  930  terraform apply
+  931  nano tp.tf
+  932  terraform apply
+  933  nano tp.tf
+  934  nano variable.tf
+  935  nano tp.tf
+  936  terraform apply
+  937  nano tp.tf
+  938  terraform apply
+  939  nano tp.tf
+  940  terraform apply
+  941  terraform show
+  942  nano tp.tf
+  943  source ~/openrc.sh
+  944  cd Projet_Terraform/
+  945  ls
+  946  cd terraform/
+  947  ls
+  948  git push
+  949  git add .
+  950  git commit
+  951  git push
+  952  ls
+  953  cd ..
+  954  git commit
+  955  git commit -m 'les problèmes
+  956  git commit -m 'les problèmes"
+  957  git commit -m 'les problèmes'
+  958  git push
+  959  cd terraform/
+  960  nano tp.tf
+  961  terraform apply
+  962  nano tp.tf
+  963  terraform apply
+  964  terraform show
+  965  nano tp.tf
+  966  terraform apply
+  967  terraform show
+  968  nano tp.tf
+  969  nano gsb5.tf
+  970  terraform apply
+  971  nano tp.tf
+  972  nano gsb5.tf
+  973  terraform apply
+  974  nano gsb5.tf
+  975  terraform apply
+  976  nano gsb5.tf
+  977  terraform apply
+  978  ls
+  979  rm gsb5.tf 
+  980  nano tp.tf
+  981  ls
+  982  cd Projet
+  983  ls
+  984  cd ..
+  985  ls
+  986  cd Projet_Terraform/
+  987  ls
+  988  cd terrr
+  989  cd terraform/
+  990  ls
+  991  nano tp.tf
+  992  ls
+  993  cd Projet_Terraform/
+  994  ls
+  995  cd terraform/
+  996  ls
+  997  nano tp.tf
+  998  nano tp.tf.old 
+  999  nano tp.tf
+ 1000  tflint
+ 1001  nano tp.tf
+ 1002  tflint
+ 1003  terraform plan
+ 1004  nano tp.tf
+ 1005  terraform apply
+ 1006  source ~/openrc.sh
+ 1007  terraform plan
+ 1008  nano tp.tf
+ 1009  nano variable
+ 1010  nano variable.tf
+ 1011  nano tp.tf
+ 1012  terrafols
+ 1013  cd Projet_t
+ 1014  cd Projet_Terraform/
+ 1015  ls
+ 1016  cd terraform/
+ 1017  ls
+ 1018  nano tp.tf
+ 1019  nano tp.tf.old 
+ 1020  nano tp.tf
+ 1021  terraform apply
+ 1022  source ~/openrc.sh
+ 1023  terraform apply
+ 1024  nano tp.tf
+ 1025  nano variable
+ 1026  nano variable.tf
+ 1027  nano tp.tf
+ 1028  terraform apply
+ 1029  nano variable.tf
+ 1030  nano tp.tf
+ 1031  terraform apply
+ 1032  nano tp.tf
+ 1033  terraform apply
+ 1034  terraform show
+ 1035  nano tp.tf
+ 1036  nano variable.tf
+ 1037  nano tp.tf
+ 1038  tflint
+ 1039  terraform apply
+ 1040  nano tp.tf
+ 1041  terraform apply
+ 1042  nano tp.tf
+ 1043  terraform apply
+ 1044  nano tp.tf
+ 1045  terraform apply
+ 1046  nano tp.tf
+ 1047  terraform apply
+ 1048  nano tp.tf
+ 1049  terraform apply
+ 1050  nano tp.tf
+ 1051  terraform apply
+ 1052  nano tp.tf
+ 1053  terraform apply
+ 1054  nano tp.tf
+ 1055  terraform apply
+ 1056  nano tp.tf
+ 1057  terraform apply
+ 1058  nano tp.tf
+ 1059  ls
+ 1060  cd Projet
+ 1061  ls
+ 1062  cd ..
+ 1063  cd Projet_Terraform/
+ 1064  ls
+ 1065  cd terraform/
+ 1066  ls
+ 1067  nano tp.tf
+ 1068  tflint
+ 1069  terraform apply
+ 1070  nano tp.tf
+ 1071  terraform apply
+ 1072  source ~/openrc.sh
+ 1073  terraform apply
+ 1074  nano tp.tf
+ 1075  nano variable.tf
+ 1076  nano tp.tf
+ 1077  terraform apply
+ 1078  terraform show
+ 1079  nano tp.tf
+ 1080  terraform apply
+ 1081  nano tp.tf
+ 1082  terraform apply
+ 1083  nano tp.tf
+ 1084  terraform apply
+ 1085  nano tp.tf
+ 1086  terraform apply
+ 1087  terraform show
+ 1088  nano tp.tf
+ 1089  *
+ 1090  source ~/openrc.sh
+ 1091  ls
+ 1092  cd Projet_Terraform/
+ 1093  ls
+ 1094  cd terraform/
+ 1095  ls
+ 1096  nano tp.tf
+ 1097  ls
+ 1098  git push
+ 1099  history > test
