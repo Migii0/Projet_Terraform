@@ -1,0 +1,410 @@
+[0m# local_file.inventory:
+resource "local_file" "inventory" {
+    [1m[0mcontent[0m[0m              = <<-EOT
+        ---
+        front:
+          hosts:
+            57.128.17.70:
+              ansible_user: debian
+              ansible_become: True
+        backends_gra:
+          hosts:
+            57.128.19.121:
+              ansible_user: debian
+              ansible_become: True
+            57.128.18.95:
+              ansible_user: debian
+              ansible_become: True
+            57.128.17.163:
+              ansible_user: debian
+              ansible_become: True
+        backends_sbg:
+          hosts:
+            51.91.145.211:
+              ansible_user: debian
+              ansible_become: True
+            51.91.150.148:
+              ansible_user: debian
+              ansible_become: True
+            51.91.144.186:
+              ansible_user: debian
+              ansible_become: True
+    EOT
+    [1m[0mdirectory_permission[0m[0m = "0777"
+    [1m[0mfile_permission[0m[0m      = "0777"
+    [1m[0mfilename[0m[0m             = "../ansible/inventory.yml"
+    [1m[0mid[0m[0m                   = "c1340738b6af7b493ab55937f0f4039a74727722"
+}
+
+# openstack_compute_instance_v2.Instance_21_Front:
+resource "openstack_compute_instance_v2" "Instance_21_Front" {
+    [1m[0maccess_ip_v4[0m[0m        = "57.128.17.70"
+    [1m[0maccess_ip_v6[0m[0m        = "[2001:41d0:304:300::2da5]"
+    [1m[0mall_metadata[0m[0m        = {}
+    [1m[0mall_tags[0m[0m            = []
+    [1m[0mavailability_zone[0m[0m   = "nova"
+    [1m[0mflavor_id[0m[0m           = "fa05492b-f252-4287-bf26-8bfa62933c6a"
+    [1m[0mflavor_name[0m[0m         = "s1-2"
+    [1m[0mforce_delete[0m[0m        = false
+    [1m[0mid[0m[0m                  = "47e19512-1eaa-4e0a-af9f-fe3ec4d903e6"
+    [1m[0mimage_id[0m[0m            = "a32aaf69-72d8-4b98-9e6a-67929fa1b9cb"
+    [1m[0mimage_name[0m[0m          = "Debian 11"
+    [1m[0mkey_pair[0m[0m            = "sshkey_eductive21"
+    [1m[0mname[0m[0m                = "front_eductive21"
+    [1m[0mpower_state[0m[0m         = "active"
+    [1m[0mregion[0m[0m              = "GRA11"
+    [1m[0msecurity_groups[0m[0m     = [
+        "default",
+    ]
+    [1m[0mstop_before_destroy[0m[0m = false
+
+    network {
+        [1m[0maccess_network[0m[0m = false
+        [1m[0mfixed_ip_v4[0m[0m    = "57.128.17.70"
+        [1m[0mfixed_ip_v6[0m[0m    = "[2001:41d0:304:300::2da5]"
+        [1m[0mmac[0m[0m            = "fa:16:3e:a5:e9:00"
+        [1m[0mname[0m[0m           = "Ext-Net"
+        [1m[0muuid[0m[0m           = "bcf59eb2-9d83-41cc-b4f5-0435ed594833"
+    }
+    network {
+        [1m[0maccess_network[0m[0m = false
+        [1m[0mfixed_ip_v4[0m[0m    = "192.168.21.124"
+        [1m[0mmac[0m[0m            = "fa:16:3e:b6:68:88"
+        [1m[0mname[0m[0m           = "vrack_private_network_21"
+        [1m[0muuid[0m[0m           = "15b21a49-4ce9-40e5-8ac1-a74a27255de4"
+    }
+}
+
+# openstack_compute_instance_v2.Instance_Backend_21_GRA11[1]:
+resource "openstack_compute_instance_v2" "Instance_Backend_21_GRA11" {
+    [1m[0maccess_ip_v4[0m[0m        = "57.128.18.95"
+    [1m[0maccess_ip_v6[0m[0m        = "[2001:41d0:304:300::33b2]"
+    [1m[0mall_metadata[0m[0m        = {}
+    [1m[0mall_tags[0m[0m            = []
+    [1m[0mavailability_zone[0m[0m   = "nova"
+    [1m[0mflavor_id[0m[0m           = "fa05492b-f252-4287-bf26-8bfa62933c6a"
+    [1m[0mflavor_name[0m[0m         = "s1-2"
+    [1m[0mforce_delete[0m[0m        = false
+    [1m[0mid[0m[0m                  = "a3789f43-a9db-43a0-afa6-7f673463abba"
+    [1m[0mimage_id[0m[0m            = "a32aaf69-72d8-4b98-9e6a-67929fa1b9cb"
+    [1m[0mimage_name[0m[0m          = "Debian 11"
+    [1m[0mkey_pair[0m[0m            = "sshkey_eductive21"
+    [1m[0mname[0m[0m                = "backend_eductive21_gra_2"
+    [1m[0mpower_state[0m[0m         = "active"
+    [1m[0mregion[0m[0m              = "GRA11"
+    [1m[0msecurity_groups[0m[0m     = [
+        "default",
+    ]
+    [1m[0mstop_before_destroy[0m[0m = false
+
+    network {
+        [1m[0maccess_network[0m[0m = false
+        [1m[0mfixed_ip_v4[0m[0m    = "57.128.18.95"
+        [1m[0mfixed_ip_v6[0m[0m    = "[2001:41d0:304:300::33b2]"
+        [1m[0mmac[0m[0m            = "fa:16:3e:1d:3d:21"
+        [1m[0mname[0m[0m           = "Ext-Net"
+        [1m[0muuid[0m[0m           = "bcf59eb2-9d83-41cc-b4f5-0435ed594833"
+    }
+    network {
+        [1m[0maccess_network[0m[0m = false
+        [1m[0mfixed_ip_v4[0m[0m    = "192.168.21.136"
+        [1m[0mmac[0m[0m            = "fa:16:3e:1c:bf:d9"
+        [1m[0mname[0m[0m           = "vrack_private_network_21"
+        [1m[0muuid[0m[0m           = "15b21a49-4ce9-40e5-8ac1-a74a27255de4"
+    }
+}
+
+# openstack_compute_instance_v2.Instance_Backend_21_GRA11[2]:
+resource "openstack_compute_instance_v2" "Instance_Backend_21_GRA11" {
+    [1m[0maccess_ip_v4[0m[0m        = "57.128.17.163"
+    [1m[0maccess_ip_v6[0m[0m        = "[2001:41d0:304:300::16ed]"
+    [1m[0mall_metadata[0m[0m        = {}
+    [1m[0mall_tags[0m[0m            = []
+    [1m[0mavailability_zone[0m[0m   = "nova"
+    [1m[0mflavor_id[0m[0m           = "fa05492b-f252-4287-bf26-8bfa62933c6a"
+    [1m[0mflavor_name[0m[0m         = "s1-2"
+    [1m[0mforce_delete[0m[0m        = false
+    [1m[0mid[0m[0m                  = "11bc5ba0-e4e9-4df2-bdd7-9acdfd684662"
+    [1m[0mimage_id[0m[0m            = "a32aaf69-72d8-4b98-9e6a-67929fa1b9cb"
+    [1m[0mimage_name[0m[0m          = "Debian 11"
+    [1m[0mkey_pair[0m[0m            = "sshkey_eductive21"
+    [1m[0mname[0m[0m                = "backend_eductive21_gra_3"
+    [1m[0mpower_state[0m[0m         = "active"
+    [1m[0mregion[0m[0m              = "GRA11"
+    [1m[0msecurity_groups[0m[0m     = [
+        "default",
+    ]
+    [1m[0mstop_before_destroy[0m[0m = false
+
+    network {
+        [1m[0maccess_network[0m[0m = false
+        [1m[0mfixed_ip_v4[0m[0m    = "57.128.17.163"
+        [1m[0mfixed_ip_v6[0m[0m    = "[2001:41d0:304:300::16ed]"
+        [1m[0mmac[0m[0m            = "fa:16:3e:cc:94:e9"
+        [1m[0mname[0m[0m           = "Ext-Net"
+        [1m[0muuid[0m[0m           = "bcf59eb2-9d83-41cc-b4f5-0435ed594833"
+    }
+    network {
+        [1m[0maccess_network[0m[0m = false
+        [1m[0mfixed_ip_v4[0m[0m    = "192.168.21.102"
+        [1m[0mmac[0m[0m            = "fa:16:3e:59:d2:d4"
+        [1m[0mname[0m[0m           = "vrack_private_network_21"
+        [1m[0muuid[0m[0m           = "15b21a49-4ce9-40e5-8ac1-a74a27255de4"
+    }
+}
+
+# openstack_compute_instance_v2.Instance_Backend_21_GRA11[0]:
+resource "openstack_compute_instance_v2" "Instance_Backend_21_GRA11" {
+    [1m[0maccess_ip_v4[0m[0m        = "57.128.19.121"
+    [1m[0maccess_ip_v6[0m[0m        = "[2001:41d0:304:300::19d4]"
+    [1m[0mall_metadata[0m[0m        = {}
+    [1m[0mall_tags[0m[0m            = []
+    [1m[0mavailability_zone[0m[0m   = "nova"
+    [1m[0mflavor_id[0m[0m           = "fa05492b-f252-4287-bf26-8bfa62933c6a"
+    [1m[0mflavor_name[0m[0m         = "s1-2"
+    [1m[0mforce_delete[0m[0m        = false
+    [1m[0mid[0m[0m                  = "77449232-2575-4925-be2c-873deaa427ac"
+    [1m[0mimage_id[0m[0m            = "a32aaf69-72d8-4b98-9e6a-67929fa1b9cb"
+    [1m[0mimage_name[0m[0m          = "Debian 11"
+    [1m[0mkey_pair[0m[0m            = "sshkey_eductive21"
+    [1m[0mname[0m[0m                = "backend_eductive21_gra_1"
+    [1m[0mpower_state[0m[0m         = "active"
+    [1m[0mregion[0m[0m              = "GRA11"
+    [1m[0msecurity_groups[0m[0m     = [
+        "default",
+    ]
+    [1m[0mstop_before_destroy[0m[0m = false
+
+    network {
+        [1m[0maccess_network[0m[0m = false
+        [1m[0mfixed_ip_v4[0m[0m    = "57.128.19.121"
+        [1m[0mfixed_ip_v6[0m[0m    = "[2001:41d0:304:300::19d4]"
+        [1m[0mmac[0m[0m            = "fa:16:3e:da:4c:f3"
+        [1m[0mname[0m[0m           = "Ext-Net"
+        [1m[0muuid[0m[0m           = "bcf59eb2-9d83-41cc-b4f5-0435ed594833"
+    }
+    network {
+        [1m[0maccess_network[0m[0m = false
+        [1m[0mfixed_ip_v4[0m[0m    = "192.168.21.118"
+        [1m[0mmac[0m[0m            = "fa:16:3e:3f:80:8b"
+        [1m[0mname[0m[0m           = "vrack_private_network_21"
+        [1m[0muuid[0m[0m           = "15b21a49-4ce9-40e5-8ac1-a74a27255de4"
+    }
+}
+
+# openstack_compute_instance_v2.Instance_Backend_21_SBG[0]:
+resource "openstack_compute_instance_v2" "Instance_Backend_21_SBG" {
+    [1m[0maccess_ip_v4[0m[0m        = "51.91.145.211"
+    [1m[0maccess_ip_v6[0m[0m        = "[2001:41d0:404:100::1138]"
+    [1m[0mall_metadata[0m[0m        = {}
+    [1m[0mall_tags[0m[0m            = []
+    [1m[0mavailability_zone[0m[0m   = "nova"
+    [1m[0mflavor_id[0m[0m           = "ce07016c-95df-4085-bb5a-565caffc2063"
+    [1m[0mflavor_name[0m[0m         = "s1-2"
+    [1m[0mforce_delete[0m[0m        = false
+    [1m[0mid[0m[0m                  = "7718b33f-3a6a-41ad-9305-b7852af28fb6"
+    [1m[0mimage_id[0m[0m            = "b6b0399c-b631-48ea-9b62-629579cf91f0"
+    [1m[0mimage_name[0m[0m          = "Debian 11"
+    [1m[0mkey_pair[0m[0m            = "sshkey_eductive21"
+    [1m[0mname[0m[0m                = "backend_eductive21_sbg_1"
+    [1m[0mpower_state[0m[0m         = "active"
+    [1m[0mregion[0m[0m              = "SBG5"
+    [1m[0msecurity_groups[0m[0m     = [
+        "default",
+    ]
+    [1m[0mstop_before_destroy[0m[0m = false
+
+    network {
+        [1m[0maccess_network[0m[0m = false
+        [1m[0mfixed_ip_v4[0m[0m    = "51.91.145.211"
+        [1m[0mfixed_ip_v6[0m[0m    = "[2001:41d0:404:100::1138]"
+        [1m[0mmac[0m[0m            = "fa:16:3e:6b:53:9d"
+        [1m[0mname[0m[0m           = "Ext-Net"
+        [1m[0muuid[0m[0m           = "581fad02-158d-4dc6-81f0-c1ec2794bbec"
+    }
+    network {
+        [1m[0maccess_network[0m[0m = false
+        [1m[0mfixed_ip_v4[0m[0m    = "192.168.21.158"
+        [1m[0mmac[0m[0m            = "fa:16:3e:fa:a6:95"
+        [1m[0mname[0m[0m           = "vrack_private_network_21"
+        [1m[0muuid[0m[0m           = "b22c63de-1c26-4751-a3cf-2b7696a639e6"
+    }
+}
+
+# openstack_compute_instance_v2.Instance_Backend_21_SBG[1]:
+resource "openstack_compute_instance_v2" "Instance_Backend_21_SBG" {
+    [1m[0maccess_ip_v4[0m[0m        = "51.91.150.148"
+    [1m[0maccess_ip_v6[0m[0m        = "[2001:41d0:404:100::17e5]"
+    [1m[0mall_metadata[0m[0m        = {}
+    [1m[0mall_tags[0m[0m            = []
+    [1m[0mavailability_zone[0m[0m   = "nova"
+    [1m[0mflavor_id[0m[0m           = "ce07016c-95df-4085-bb5a-565caffc2063"
+    [1m[0mflavor_name[0m[0m         = "s1-2"
+    [1m[0mforce_delete[0m[0m        = false
+    [1m[0mid[0m[0m                  = "4e93b1e2-7dc4-459d-8dec-d3a9b1f160d9"
+    [1m[0mimage_id[0m[0m            = "b6b0399c-b631-48ea-9b62-629579cf91f0"
+    [1m[0mimage_name[0m[0m          = "Debian 11"
+    [1m[0mkey_pair[0m[0m            = "sshkey_eductive21"
+    [1m[0mname[0m[0m                = "backend_eductive21_sbg_2"
+    [1m[0mpower_state[0m[0m         = "active"
+    [1m[0mregion[0m[0m              = "SBG5"
+    [1m[0msecurity_groups[0m[0m     = [
+        "default",
+    ]
+    [1m[0mstop_before_destroy[0m[0m = false
+
+    network {
+        [1m[0maccess_network[0m[0m = false
+        [1m[0mfixed_ip_v4[0m[0m    = "51.91.150.148"
+        [1m[0mfixed_ip_v6[0m[0m    = "[2001:41d0:404:100::17e5]"
+        [1m[0mmac[0m[0m            = "fa:16:3e:12:75:f0"
+        [1m[0mname[0m[0m           = "Ext-Net"
+        [1m[0muuid[0m[0m           = "581fad02-158d-4dc6-81f0-c1ec2794bbec"
+    }
+    network {
+        [1m[0maccess_network[0m[0m = false
+        [1m[0mfixed_ip_v4[0m[0m    = "192.168.21.172"
+        [1m[0mmac[0m[0m            = "fa:16:3e:b0:08:cc"
+        [1m[0mname[0m[0m           = "vrack_private_network_21"
+        [1m[0muuid[0m[0m           = "b22c63de-1c26-4751-a3cf-2b7696a639e6"
+    }
+}
+
+# openstack_compute_instance_v2.Instance_Backend_21_SBG[2]:
+resource "openstack_compute_instance_v2" "Instance_Backend_21_SBG" {
+    [1m[0maccess_ip_v4[0m[0m        = "51.91.144.186"
+    [1m[0maccess_ip_v6[0m[0m        = "[2001:41d0:404:100::30ab]"
+    [1m[0mall_metadata[0m[0m        = {}
+    [1m[0mall_tags[0m[0m            = []
+    [1m[0mavailability_zone[0m[0m   = "nova"
+    [1m[0mflavor_id[0m[0m           = "ce07016c-95df-4085-bb5a-565caffc2063"
+    [1m[0mflavor_name[0m[0m         = "s1-2"
+    [1m[0mforce_delete[0m[0m        = false
+    [1m[0mid[0m[0m                  = "cef32f5a-1519-4a63-a62f-815be92b04a9"
+    [1m[0mimage_id[0m[0m            = "b6b0399c-b631-48ea-9b62-629579cf91f0"
+    [1m[0mimage_name[0m[0m          = "Debian 11"
+    [1m[0mkey_pair[0m[0m            = "sshkey_eductive21"
+    [1m[0mname[0m[0m                = "backend_eductive21_sbg_3"
+    [1m[0mpower_state[0m[0m         = "active"
+    [1m[0mregion[0m[0m              = "SBG5"
+    [1m[0msecurity_groups[0m[0m     = [
+        "default",
+    ]
+    [1m[0mstop_before_destroy[0m[0m = false
+
+    network {
+        [1m[0maccess_network[0m[0m = false
+        [1m[0mfixed_ip_v4[0m[0m    = "51.91.144.186"
+        [1m[0mfixed_ip_v6[0m[0m    = "[2001:41d0:404:100::30ab]"
+        [1m[0mmac[0m[0m            = "fa:16:3e:39:cc:1e"
+        [1m[0mname[0m[0m           = "Ext-Net"
+        [1m[0muuid[0m[0m           = "581fad02-158d-4dc6-81f0-c1ec2794bbec"
+    }
+    network {
+        [1m[0maccess_network[0m[0m = false
+        [1m[0mfixed_ip_v4[0m[0m    = "192.168.21.137"
+        [1m[0mmac[0m[0m            = "fa:16:3e:21:51:b7"
+        [1m[0mname[0m[0m           = "vrack_private_network_21"
+        [1m[0muuid[0m[0m           = "b22c63de-1c26-4751-a3cf-2b7696a639e6"
+    }
+}
+
+# openstack_compute_keypair_v2.Keypair_GRA11:
+resource "openstack_compute_keypair_v2" "Keypair_GRA11" {
+    [1m[0mfingerprint[0m[0m = "47:f9:b7:3e:2f:f3:eb:c2:87:dd:b2:f1:16:73:18:ef"
+    [1m[0mid[0m[0m          = "sshkey_eductive21"
+    [1m[0mname[0m[0m        = "sshkey_eductive21"
+    [1m[0mpublic_key[0m[0m  = <<-EOT
+        ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCdQO7dARQxpKI5dIZXYs8lb6SqmBbQRyw+w2ZjqCbY1nVyoPXixPtBix9wrYlmfRIRDNIjyEVcZB3CfYXsbTEs1+NFEm4zZLfBCJp+yPAZZrwct0CSHJOprZx0oEqzc9mQ+GTO1RqJ/n5QWOfaxk/RrlKIoycyJzGi8AQ1grkLNIHf0fppk/b9omYLOrHjVXqK0fwOo5YEPSw7fyR9RxsRySIJ/vnLK/3M3wM+6TqESYJ5F566qCrVPPNuMmR8gSbkqKVZjniu5O6TQRwuUFJoSLfZwqqSeC47f4A2S+Y478RKnJ9PXGFHCZWobGtR4Su0S8kvjD6+K2oIMQqXvVc2fzOLhgqHSFDXHmtEmP150lXPpKcJGUvHeBa8AnqFuNLyJRz8jJ24gaHf8PqQYNifKpOZHeavCS3m6xMjHQyfbwEetVd144Mof7ZUEln6kmxsQV/rUj8EFYrIKZ4amljON6LKKnTVXwTQIalTqI1ctxzTKyX5tHSwd435XkU4rf2zeHbDEBjb5MntKbpUm2YFuqTcUvUrKFKdrc+mgxTuFu51eXrmjZa19d0mymze5bWSrlDiUZ32aZeM/yeQWVoOANUfK2Yt580g/bzXbShGDeRnvjzRHXa8zfe4H0Ad9ydIqwTCfS207tcseqFCKk61j/GhphzfbbzVta4Qa/JgZQ== eductive21@master.thisistheway.ovh
+    EOT
+    [1m[0mregion[0m[0m      = "GRA11"
+}
+
+# openstack_compute_keypair_v2.Keypair_SBG5:
+resource "openstack_compute_keypair_v2" "Keypair_SBG5" {
+    [1m[0mfingerprint[0m[0m = "47:f9:b7:3e:2f:f3:eb:c2:87:dd:b2:f1:16:73:18:ef"
+    [1m[0mid[0m[0m          = "sshkey_eductive21"
+    [1m[0mname[0m[0m        = "sshkey_eductive21"
+    [1m[0mpublic_key[0m[0m  = <<-EOT
+        ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCdQO7dARQxpKI5dIZXYs8lb6SqmBbQRyw+w2ZjqCbY1nVyoPXixPtBix9wrYlmfRIRDNIjyEVcZB3CfYXsbTEs1+NFEm4zZLfBCJp+yPAZZrwct0CSHJOprZx0oEqzc9mQ+GTO1RqJ/n5QWOfaxk/RrlKIoycyJzGi8AQ1grkLNIHf0fppk/b9omYLOrHjVXqK0fwOo5YEPSw7fyR9RxsRySIJ/vnLK/3M3wM+6TqESYJ5F566qCrVPPNuMmR8gSbkqKVZjniu5O6TQRwuUFJoSLfZwqqSeC47f4A2S+Y478RKnJ9PXGFHCZWobGtR4Su0S8kvjD6+K2oIMQqXvVc2fzOLhgqHSFDXHmtEmP150lXPpKcJGUvHeBa8AnqFuNLyJRz8jJ24gaHf8PqQYNifKpOZHeavCS3m6xMjHQyfbwEetVd144Mof7ZUEln6kmxsQV/rUj8EFYrIKZ4amljON6LKKnTVXwTQIalTqI1ctxzTKyX5tHSwd435XkU4rf2zeHbDEBjb5MntKbpUm2YFuqTcUvUrKFKdrc+mgxTuFu51eXrmjZa19d0mymze5bWSrlDiUZ32aZeM/yeQWVoOANUfK2Yt580g/bzXbShGDeRnvjzRHXa8zfe4H0Ad9ydIqwTCfS207tcseqFCKk61j/GhphzfbbzVta4Qa/JgZQ== eductive21@master.thisistheway.ovh
+    EOT
+    [1m[0mregion[0m[0m      = "SBG5"
+}
+
+# ovh_cloud_project_network_private.network:
+resource "ovh_cloud_project_network_private" "network" {
+    [1m[0mid[0m[0m                 = "pn-1089024_21"
+    [1m[0mname[0m[0m               = "vrack_private_network_21"
+    [1m[0mregions[0m[0m            = [
+        "GRA11",
+        "SBG5",
+    ]
+    [1m[0mregions_attributes[0m[0m = [
+        {
+            openstackid = "15b21a49-4ce9-40e5-8ac1-a74a27255de4"
+            region      = "GRA11"
+            status      = "ACTIVE"
+        },
+        {
+            openstackid = "b22c63de-1c26-4751-a3cf-2b7696a639e6"
+            region      = "SBG5"
+            status      = "ACTIVE"
+        },
+    ]
+    [1m[0mregions_status[0m[0m     = [
+        {
+            region = "SBG5"
+            status = "ACTIVE"
+        },
+    ]
+    [1m[0mservice_name[0m[0m       = "9957f50cea694f13b26cc064d04b2e95"
+    [1m[0mstatus[0m[0m             = "ACTIVE"
+    [1m[0mtype[0m[0m               = "private"
+    [1m[0mvlan_id[0m[0m            = 21
+}
+
+# ovh_cloud_project_network_private_subnet.subnet[0]:
+resource "ovh_cloud_project_network_private_subnet" "subnet" {
+    [1m[0mcidr[0m[0m         = "192.168.21.0/24"
+    [1m[0mdhcp[0m[0m         = true
+    [1m[0mend[0m[0m          = "192.168.21.200"
+    [1m[0mid[0m[0m           = "d6385372-423a-4b6c-a1cc-9b65a047136e"
+    [1m[0mip_pools[0m[0m     = [
+        {
+            dhcp    = true
+            end     = "192.168.21.200"
+            network = "192.168.21.0/24"
+            region  = "SBG5"
+            start   = "192.168.21.100"
+        },
+    ]
+    [1m[0mnetwork[0m[0m      = "192.168.21.0/24"
+    [1m[0mnetwork_id[0m[0m   = "pn-1089024_21"
+    [1m[0mno_gateway[0m[0m   = true
+    [1m[0mregion[0m[0m       = "SBG5"
+    [1m[0mservice_name[0m[0m = "9957f50cea694f13b26cc064d04b2e95"
+    [1m[0mstart[0m[0m        = "192.168.21.100"
+}
+
+# ovh_cloud_project_network_private_subnet.subnet[1]:
+resource "ovh_cloud_project_network_private_subnet" "subnet" {
+    [1m[0mcidr[0m[0m         = "192.168.21.0/24"
+    [1m[0mdhcp[0m[0m         = true
+    [1m[0mend[0m[0m          = "192.168.21.200"
+    [1m[0mid[0m[0m           = "2a5a5364-2b19-4bea-82c8-ca1b25d00094"
+    [1m[0mip_pools[0m[0m     = [
+        {
+            dhcp    = true
+            end     = "192.168.21.200"
+            network = "192.168.21.0/24"
+            region  = "GRA11"
+            start   = "192.168.21.100"
+        },
+    ]
+    [1m[0mnetwork[0m[0m      = "192.168.21.0/24"
+    [1m[0mnetwork_id[0m[0m   = "pn-1089024_21"
+    [1m[0mno_gateway[0m[0m   = true
+    [1m[0mregion[0m[0m       = "GRA11"
+    [1m[0mservice_name[0m[0m = "9957f50cea694f13b26cc064d04b2e95"
+    [1m[0mstart[0m[0m        = "192.168.21.100"
+}[0m[0m
